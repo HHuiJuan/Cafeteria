@@ -1,5 +1,5 @@
 <?php
-define('DB_HOST', '52.203.57.254');
+define('DB_HOST', 'cafe-db.chhcwyw7nw2u.us-east-1.rds.amazonaws.com');
 define('DB_NAME', 'cafeteria');
 define('DB_USER', 'cafeadmin');
 define('DB_PASS', 'Cafe-pass1234');
