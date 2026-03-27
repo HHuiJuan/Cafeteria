@@ -1,7 +1,7 @@
 <?php
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
-require_once 'db.php';
+require_once 'dbconn.php';
 
 $action = $_GET['action'] ?? $_POST['action'] ?? '';
 
