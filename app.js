@@ -165,7 +165,7 @@ function buildCard(item) {
         <div class="card-category">${escHtml(item.Category)}</div>
         <div class="card-name">${escHtml(item.Name)}</div>
         <div class="card-footer">
-          <div class="card-price">$${parseFloat(item.Price).toFixed(2)}</div>
+          <div class="card-price">$RM{parseFloat(item.Price).toFixed(2)}</div>
           <button class="add-btn" ${unavailable ? 'disabled' : `onclick="event.stopPropagation(); addToCart(${item.MenuID})"`}>+</button>
         </div>
       </div>
@@ -228,11 +228,11 @@ function updateCartUI() {
           <span class="qty-num">${c.quantity}</span>
           <button class="qty-btn" onclick="changeQty(${c.menu_id},1)">+</button>
         </div>
-        <div class="cart-item-price">$${(c.price * c.quantity).toFixed(2)}</div>
+        <div class="cart-item-price">$RM{(c.price * c.quantity).toFixed(2)}</div>
       </div>`).join('');
     footerEl.style.display = 'block';
-    document.getElementById('cartSubtotal').textContent = `$${total.toFixed(2)}`;
-    document.getElementById('cartTotal').textContent = `$${total.toFixed(2)}`;
+    document.getElementById('cartSubtotal').textContent = `$RM{total.toFixed(2)}`;
+    document.getElementById('cartTotal').textContent = `$RM{total.toFixed(2)}`;
   }
 
   // Sidebar cart
@@ -240,8 +240,8 @@ function updateCartUI() {
   if (cart.length) {
     sidebarCart.style.display = 'block';
     document.getElementById('sidebarCartItems').innerHTML =
-      cart.map(c => `<div class="sidebar-cart-item"><span>${escHtml(c.name)} x${c.quantity}</span><span>$${(c.price*c.quantity).toFixed(2)}</span></div>`).join('');
-    document.getElementById('sidebarTotal').textContent = `$${total.toFixed(2)}`;
+      cart.map(c => `<div class="sidebar-cart-item"><span>${escHtml(c.name)} x${c.quantity}</span><span>$RM{(c.price*c.quantity).toFixed(2)}</span></div>`).join('');
+    document.getElementById('sidebarTotal').textContent = `$RM{total.toFixed(2)}`;
   } else {
     sidebarCart.style.display = 'none';
   }
@@ -274,9 +274,9 @@ function openCheckout() {
     cart.map(c => `
       <div class="summary-item">
         <span>${escHtml(c.name)} × ${c.quantity}</span>
-        <span>$${(c.price * c.quantity).toFixed(2)}</span>
+        <span>$RM{(c.price * c.quantity).toFixed(2)}</span>
       </div>`).join('');
-  document.getElementById('checkoutTotal').textContent = `$${total.toFixed(2)}`;
+  document.getElementById('checkoutTotal').textContent = `$RM{total.toFixed(2)}`;
 
   document.getElementById('checkoutOverlay').classList.add('open');
 }
@@ -327,13 +327,13 @@ function showSuccess(orderId, total, type, method) {
   document.getElementById('successMessage').textContent = `${type} • ${method} Payment`;
 
   const receiptItems = cart.length
-    ? cart.map(c => `<div class="receipt-row"><span>${escHtml(c.name)} x${c.quantity}</span><span>$${(c.price*c.quantity).toFixed(2)}</span></div>`).join('')
+    ? cart.map(c => `<div class="receipt-row"><span>${escHtml(c.name)} x${c.quantity}</span><span>$RM{(c.price*c.quantity).toFixed(2)}</span></div>`).join('')
     : '<p style="color:#888;font-size:12px">Items processed.</p>';
 
   document.getElementById('receipt').innerHTML = `
     ${receiptItems}
     <hr class="receipt-divider">
-    <div class="receipt-total"><span>TOTAL</span><span>$${parseFloat(total).toFixed(2)}</span></div>
+    <div class="receipt-total"><span>TOTAL</span><span>$RM{parseFloat(total).toFixed(2)}</span></div>
     <div style="margin-top:8px;font-size:11px;color:#888;text-align:center">Thank you! Order #${orderId} confirmed ✓</div>`;
 
   document.getElementById('successOverlay').classList.add('open');
