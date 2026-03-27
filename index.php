@@ -32,7 +32,7 @@
 <!-- MARQUEE STRIP -->
 <div class="marquee-strip">
   <div class="marquee-inner">
-    ★ TODAY'S SPECIAL: KARI LAKSA RM6.50 &nbsp;&nbsp;&nbsp;  ★ HOMEMADE PIE FRESH DAILY &nbsp;&nbsp;&nbsp; ★ OPEN 7 DAYS A WEEK &nbsp;&nbsp;&nbsp; ★ DINE-IN OR TAKEAWAY &nbsp;&nbsp;&nbsp; ★ TODAY'S SPECIAL: DOUBLE PATTY BURGER $8.99 &nbsp;&nbsp;&nbsp; 
+    ★ TODAY'S SPECIAL: KARI LAKSA RM6.50 &nbsp;&nbsp;&nbsp;  ★ HOMEMADE PIE FRESH DAILY &nbsp;&nbsp;&nbsp; ★ OPEN 7 DAYS A WEEK &nbsp;&nbsp;&nbsp; ★ DINE-IN OR TAKEAWAY &nbsp;&nbsp;&nbsp; ★ TODAY'S SPECIAL: DOUBLE PATTY BURGER RM10 &nbsp;&nbsp;&nbsp; 
   </div>
 </div>
 
@@ -64,7 +64,7 @@
     <div class="sidebar-cart" id="sidebarCart" style="display:none">
       <div class="sidebar-cart-title">🛒 Current Order</div>
       <div id="sidebarCartItems"></div>
-      <div class="sidebar-cart-total">Total: <span id="sidebarTotal">$0.00</span></div>
+      <div class="sidebar-cart-total">Total: <span id="sidebarTotal">RM0.00</span></div>
       <button class="checkout-sidebar-btn" onclick="openCheckout()">Checkout →</button>
     </div>
   </aside>
@@ -97,7 +97,7 @@
       <span>Subtotal</span><span id="cartSubtotal">$0.00</span>
     </div>
     <div class="cart-total-row grand">
-      <span>Total</span><span id="cartTotal">$0.00</span>
+      <span>Total</span><span id="cartTotal">RM0.00</span>
     </div>
     <button class="checkout-btn" onclick="openCheckout()">
       Place Order →
@@ -151,7 +151,7 @@
     </div>
 
     <div class="checkout-total-bar">
-      Total: <strong id="checkoutTotal">$0.00</strong>
+      Total: <strong id="checkoutTotal">RM0.00</strong>
     </div>
 
     <button class="confirm-order-btn" onclick="confirmOrder()">
