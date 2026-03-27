@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rosie's Diner — Order Up!</title>
+<title>TARUMT Cafeteria — Order Up!</title>
 <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Permanent+Marker&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -15,9 +15,8 @@
     <div class="logo-wrap">
       <div class="neon-sign">
         <span class="neon-r">TARUMT</span><span class="neon-text">Cafeteria</span>
-        <span class="neon-diner">DINER</span>
       </div>
-      <p class="tagline">★ Est. 1957 — Good Food, Great Times ★</p>
+      <p class="tagline">★ Est. 2026 — Good Food, Great Times ★</p>
     </div>
     <div class="header-actions">
       <button class="cart-btn" id="cartBtn" onclick="toggleCart()">
@@ -32,7 +31,7 @@
 <!-- MARQUEE STRIP -->
 <div class="marquee-strip">
   <div class="marquee-inner">
-    ★ TODAY'S SPECIAL: KARI LAKSA RM6.50 &nbsp;&nbsp;&nbsp;  ★ HOMEMADE PIE FRESH DAILY &nbsp;&nbsp;&nbsp; ★ OPEN 7 DAYS A WEEK &nbsp;&nbsp;&nbsp; ★ DINE-IN OR TAKEAWAY &nbsp;&nbsp;&nbsp; ★ TODAY'S SPECIAL: DOUBLE PATTY BURGER RM10 &nbsp;&nbsp;&nbsp; 
+    ★ TODAY'S SPECIAL: KARI LAKSA RM6.50 &nbsp;&nbsp;&nbsp;  ★ HOMEMADE CURRY FRESH DAILY &nbsp;&nbsp;&nbsp; ★ OPEN 7 DAYS A WEEK &nbsp;&nbsp;&nbsp; ★ DINE-IN OR TAKEAWAY &nbsp;&nbsp;&nbsp; ★ TODAY'S SPECIAL: DOUBLE PATTY BURGER RM10 &nbsp;&nbsp;&nbsp; 
   </div>
 </div>
 
