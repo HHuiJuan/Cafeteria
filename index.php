@@ -14,7 +14,7 @@
   <div class="header-inner">
     <div class="logo-wrap">
       <div class="neon-sign">
-        <span class="neon-r">R</span><span class="neon-text">osie's</span>
+        <span class="neon-r">TARUMT</span><span class="neon-text">Cafeteria</span>
         <span class="neon-diner">DINER</span>
       </div>
       <p class="tagline">★ Est. 1957 — Good Food, Great Times ★</p>
@@ -32,7 +32,7 @@
 <!-- MARQUEE STRIP -->
 <div class="marquee-strip">
   <div class="marquee-inner">
-    ★ TODAY'S SPECIAL: DOUBLE PATTY BURGER $8.99 &nbsp;&nbsp;&nbsp; ★ FREE REFILLS ON ALL SODAS &nbsp;&nbsp;&nbsp; ★ HOMEMADE PIE FRESH DAILY &nbsp;&nbsp;&nbsp; ★ OPEN 7 DAYS A WEEK &nbsp;&nbsp;&nbsp; ★ DINE-IN OR TAKEAWAY &nbsp;&nbsp;&nbsp; ★ TODAY'S SPECIAL: DOUBLE PATTY BURGER $8.99 &nbsp;&nbsp;&nbsp; ★ FREE REFILLS ON ALL SODAS &nbsp;&nbsp;&nbsp;
+    ★ TODAY'S SPECIAL: KARI LAKSA RM6.50 &nbsp;&nbsp;&nbsp;  ★ HOMEMADE PIE FRESH DAILY &nbsp;&nbsp;&nbsp; ★ OPEN 7 DAYS A WEEK &nbsp;&nbsp;&nbsp; ★ DINE-IN OR TAKEAWAY &nbsp;&nbsp;&nbsp; ★ TODAY'S SPECIAL: DOUBLE PATTY BURGER $8.99 &nbsp;&nbsp;&nbsp; 
   </div>
 </div>
 
