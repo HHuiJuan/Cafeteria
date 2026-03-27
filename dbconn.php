@@ -7,11 +7,14 @@ $user = "cafeadmin";
 $pass = "Cafe-pass1234";   // replace with your actual password
 $db   = "cafeteria";
 
-$conn = new mysqli($host, $user, $pass, $db);
-
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+function getConnection() {
+    $conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+    if ($conn->connect_error) {
+        die(json_encode(['error' => 'Connection failed: ' . $conn->connect_error]));
+    }
+    $conn->set_charset('utf8mb4');
+    echo "Connected successfully to RDS!";
+    return $conn;
 }
-
 echo "✅ Connected successfully to RDS!";
 ?>
