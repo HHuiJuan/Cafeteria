@@ -21,6 +21,7 @@ const categoryEmojis = {
   'Specials': '⭐',
   'Noodles': '🍜',
   'Rice': '🍚',
+  'Instant Food': '🥫',
 };
 
 function getCatEmoji(cat) {
