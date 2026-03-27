@@ -19,6 +19,8 @@ const categoryEmojis = {
   'Steak': '🥩', 'Steaks': '🥩',
   'Kids': '🧒',
   'Specials': '⭐',
+  'Noodles': '🍜',
+  'Rice': '🍚',
 };
 
 function getCatEmoji(cat) {
