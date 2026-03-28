@@ -16,5 +16,5 @@ function getConnection() {
     echo "Connected successfully to RDS!";
     return $conn;
 }
-echo "✅ Connected successfully to RDS!";
+echo "Connected successfully to RDS!";
 ?>
